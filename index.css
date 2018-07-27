@@ -74,6 +74,16 @@ nav a{
  align-items: center;
 
 }
+#news div{
+	font-size: 1.2em;
+	padding: 3%;
+	
+	width: 35%;
+	display: flex;
+	/*flex-wrap: wrap;*/
+
+	
+}
 
 #news img {
 	width: 60px;
