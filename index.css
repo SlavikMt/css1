@@ -1,19 +1,82 @@
 body{
 	max-width: 1200px;
 	margin:auto;
+	font-size: 16px;
+	font-family: "Open Sans";
 }
-nav a{
+h3 {
+	color: #20B2AA;
+	font-weight: bold;
+	font-size: 2em;
+	margin: 10px;
+	text-align: center;
+	
+}
+#logo {
+	display: flex;
+
+}
+#logo img{
+	width: 150px;
+	height: 100px;
+}
+#logo a{
 	text-decoration: none;
-	padding: 2px;
-	display: inline-block;
+	color: blue;
+	font-weight: bold;
+	font-size: 5em;
+	
+
+
 	
 
 }
-a:hover {
+ nav {
+	
+	background-color: #F5F5F5;
+	display: flex;
+	justify-content: center;
+
+	
+}
+nav a{
+	text-decoration: none;
+	padding: 3px;
+	color: #20B2AA;
+	font-weight: bold;
+	font-size: 2em;
+	margin: 10px;
+
+	
+
+}
+ nav a:hover {
 	color: white;
 	background: purple;
-	opacity: 10%;
+	transition: 2s;
+	
 }
 #carousel img{
 	min-width: 100%;
+}
+#info{
+	font-size: 1.5em;
+	background-color: #FFF5EE;
+}
+#info div{
+	display: flex;
+	
+}
+#video iframe{
+	width:560px;
+	 height:315px;
+  display: flex;
+ align-items: center;
+
+}
+
+#news img {
+	width: 60px;
+	height: 60px;
+	
 }
