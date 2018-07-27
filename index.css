@@ -1,0 +1,19 @@
+body{
+	max-width: 1200px;
+	margin:auto;
+}
+nav a{
+	text-decoration: none;
+	padding: 2px;
+	display: inline-block;
+	
+
+}
+a:hover {
+	color: white;
+	background: purple;
+	opacity: 10%;
+}
+#carousel img{
+	min-width: 100%;
+}

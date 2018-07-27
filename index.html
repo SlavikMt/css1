@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Save Dnister!</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<header>
+		<div id="logo"><img src="img/logo.png" alt="logotype picture">
+		
+		<a href="index.html">Save Dnister!</a>
+	   </div>
+		
+	<nav>
+		<a href="#home">Home</a>
+		<a href="#info">Information</a>
+		<a href="#video">Video</a>
+		<a href="#Canvas">Canvas</a>
+		<a href="#news">News</a>
+		<a href="#links">contacts</a>
+		<a href="#contacts">links</a>
+	</nav>
+	</header>
+	<main>
+		<section id="carousel">
+			<img src="img/pano-zalishyky.jpg" alt="">
+		</section>
+		<section id="info">
+			<h3>Construction of a cascade of hydroelectric power stations in the upper part of the Dnister</h1>
+
+				<article>
+					<p> On the Dniester River they plan to build a cascade of six hydroelectric power stations. The project with a magnitude - to spend on it have 16 billion hryvnia: 166 million dollars from public funds and 400 million euros, attracted to international communities. They are still talking about 1.1 billion euros (= 32 billion UAH) of a loan, which has already agreed to be issued by the European Bank for Reconstruction and Development. The planned total capacity of these six hydroelectric plants is 390 MW. 
+					</p>
+                </article>
+                <article>
+	                <p> The administrative area will cover three oblasts: Ivano-Frankivsk, Ternopil and Chernivtsi (Ternopil-Frankivsk branch - 5 HPPs, Ternopil-Chernivtsi - one). At the end of last year, the heads of the then state administrations applied to allow local communities to authorize the start of construction. Officials left with the regional councils, and Ivano-Frankivsk deputies immediately said their "no". In Bukovina, the news was taken more or less calmly - the community, apparently, resigned that their Dniester is not like a river, as a source of energy. Instead, in Ternopil on this issue, the spears do not jumble, they hesitate between the incidental (read aloud) economic benefits and the real harm that will be caused to the environment.    
+	                </p>
+	                <img src="img/kaskadGES.jpg" alt="map ">
+                </article>
+                
+              </section><hr>
+              <section id="video">
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/MmJGB5Zxhh4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </section >
+                <section id="canvas">
+                	<h3>Your attitude to the construction of a cascade of hydroelectric power stations?</h3>
+                	<form method="post" action="">
+                		<label ><input type="radio" name="ask" value="negative">negative</label><br>
+                		<label ><input type="radio" name="ask" value="positive">positive</label><br>
+                		<label ><input type="radio" name="ask" value="can not say for sure">can not say for sure</label>
+                		<label>
+                            
+                	</form>
+                </section>
+                <hr>
+                <section id="news">
+                	<h3>Letest news</h3>
+                	<div>World Nature Fund opposed the construction of a cascade of hydropower plants on the Dniester
+<img src="img/bird.jpg" alt="bird"></div>
+                	<div>World Nature Fund opposed the construction of a cascade of hydropower plants on the Dniester
+<img src="img/island.jpg" alt="island"></div>
+                	<div> To stop the construction of a hydroelectric power station on the Dniester, it is necessary to go on the offensive  
+<img src="img/child.jpg" alt="child"></div>
+                	<div>Villages in two areas will be under water through the construction of hydroelectric power stations on the Dniester. <img src="img/gora.jpg" alt="car"></div>
+                </section>
+                <hr>
+                <section id="contacts">
+                	<h3>Contact us</h3>
+                	<form action="" method="post">
+                		<label >
+                		your name: <input type="text" value="your name"><br>
+                	</label>
+                	<label >your email: <input type="text" value="your email"> </label><br>
+                	<textarea name="" id="" cols="30" rows="10"></textarea>
+                	<input type="submit">
+                	<input type="reset">
+                	</form>
+                </section>
+
+	</main>
+	<hr>
+<footer id="contacts">
+	<img src="img/icons8-facebook-48.png" alt="facebook">
+	<img src="img/icons8-google-48.png" alt="google">
+	<img src="img/icons8-instagram-50.png" alt="instagram">
+	<a href="http://dnistercanyon.pp.ua/index.php/uk/">more about us</a>
+	<button onclick="getLocation()">Try It</button>
+
+<div id="mapholder"></div>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+//To use this code on your website, get a free API key from Google.
+//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+</footer>
+
+</body>
+</html>
