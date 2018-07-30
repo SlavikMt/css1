@@ -1,0 +1,142 @@
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Slabo+27px" rel="stylesheet">
+:root {
+	font-family: 'Slabo 27px', serif;	}
+body{
+	max-width: 1200px;
+	margin:auto;
+
+}
+h3 {
+	color: #20B2AA;
+	font-weight: bold;
+	font-size: 2.5rem;
+	margin: 10px;
+	text-align: center;
+	
+}
+header  #logo  img{
+	width:13%;
+	
+}
+
+header  #logo a{
+	text-decoration: none;
+	color: blue;
+	font-weight: bold;
+	font-size: 4rem;
+	font-family: 'Playfair Display', serif; 
+		}
+header nav {
+	background-color: #F5F5F5;
+		
+}
+header nav ul {
+	margin-left: 0;
+	padding-left: 0;
+
+}
+header nav ul li {
+	list-style-type:  none;
+margin-left: 2%;
+}
+ header nav ul li a{
+	text-decoration: none;
+	color: #20B2AA;
+	font-weight: bold;
+	font-size: 2em;
+
+}
+ nav a:hover {
+	color: white;
+	background: purple;
+	transition: 2s;
+	
+}
+@media (min-width: 750px){
+	header nav {
+		display: flex;
+	}
+	header nav ul {
+		display: flex;
+		flex:1;
+align-items: center;
+
+	justify-content: center;
+
+	
+	}
+	
+}
+
+#carousel img{
+	width: 100%;
+}
+#info{
+	font-size: 1.5em;
+	background-color: #FFF5EE;
+}
+
+#info div img{
+	width: 60%
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:10%;
+    top:0;
+    height:80%;
+    width:80%;
+    position:absolute;
+}
+
+#news .news-item div{
+	font-size: 1.2em;
+	padding: 2%;
+	border: 0.5px solid grey;
+column-gap: 5px;
+	grid-row-gap: 5px;
+}
+#news .news-item div p {
+max-width: 70%;
+display: inline-block;
+}
+
+#news .news-item div img {
+	width: 60px;
+	height: 60px;
+	
+}
+
+@media (min-width: 400px) {
+	#news .news-item{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border: 0.5px solid grey;
+	}
+	
+	
+
+}
+@media  (min-width: 750px) {
+	#news .news-item {
+		grid-template-columns: 1fr 1fr 1fr;
+		border: 0.5px solid grey;
+	}
+
+
+}
+#Contacts form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#Contacts form textarea {
+	    box-sizing: border-box;
+
+    max-width: 60%;
+}
+

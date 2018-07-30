@@ -1,54 +1,48 @@
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Slabo+27px" rel="stylesheet">
+:root {
+	font-family: 'Slabo 27px', serif;	}
 body{
 	max-width: 1200px;
-	margin:auto;
-	font-size: 16px;
-	font-family: "Open Sans";
+	margin: 0 auto;
+
 }
 h3 {
 	color: #20B2AA;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 2rem;
 	margin: 10px;
 	text-align: center;
 	
 }
-#logo {
-	display: flex;
-
+header div img{
+	width:20%;
+	
 }
-#logo img{
-	width: 150px;
-	height: 100px;
-}
-#logo a{
+header div a{
 	text-decoration: none;
 	color: blue;
 	font-weight: bold;
-	font-size: 5em;
-	
-
-
-	
-
-}
- nav {
-	
+	font-size: 5rem;
+	font-family: 'Playfair Display', serif;
+	}
+header nav {
 	background-color: #F5F5F5;
-	display: flex;
-	justify-content: center;
-
-	
+		
 }
-nav a{
+header nav ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+header nav ul li {
+	list-style-type:  none;
+}
+ header nav ul li a{
 	text-decoration: none;
 	padding: 3px;
 	color: #20B2AA;
 	font-weight: bold;
 	font-size: 2em;
-	margin: 10px;
-
 	
-
 }
  nav a:hover {
 	color: white;
@@ -56,11 +50,25 @@ nav a{
 	transition: 2s;
 	
 }
+@media (min-width: 750px){
+	header nav {
+		display: flex;
+	}
+	header nav ul {
+		display: flex;
+		flex:1;
+		align-items: center;
+	}
+	header nav ul li {
+		margin-left: 2%;
+	}
+}
+
 #carousel img{
-	min-width: 100%;
+	width: 100%;
 }
 #info{
-	font-size: 1.5em;
+	font-size: 2rem;
 	background-color: #FFF5EE;
 }
 #info div{
