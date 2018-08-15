@@ -46,26 +46,14 @@ header nav ul li {
 }
  nav a:hover {
 	color: white;
-	background: purple;
+	background: grey;
 	transition: 2s;
 	
 }
-@media (min-width: 750px){
-	header nav {
-		display: flex;
-	}
-	header nav ul {
-		display: flex;
-		flex:1;
-		align-items: center;
-	}
-	header nav ul li {
-		margin-left: 2%;
-	}
-}
 
-#carousel img{
-	width: 100%;
+
+.carousel-inner img {
+	height: 357px !important;
 }
 #info{
 	font-size: 2rem;
@@ -88,7 +76,7 @@ header nav ul li {
 	
 	width: 35%;
 	display: flex;
-	/*flex-wrap: wrap;*/
+	
 
 	
 }
@@ -97,4 +85,7 @@ header nav ul li {
 	width: 60px;
 	height: 60px;
 	
+}
+footer#links{
+	background-color: black;
 }
