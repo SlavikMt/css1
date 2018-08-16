@@ -47,6 +47,7 @@ margin-left: 2%;
 	color: #20B2AA;
 	font-weight: bold;
 	font-size: 2em;
+	border-radius: 10px;
 
 }
  nav a:hover {
@@ -111,7 +112,7 @@ align-items: center;
 #news .news-item div{
 	font-size: 1.2em;
 	padding: 2%;
-	border: 0.5px solid grey;
+	/*border: 0.5px solid grey;*/
 column-gap: 5px;
 	grid-row-gap: 5px;
 }
@@ -130,7 +131,7 @@ display: inline-block;
 	#news .news-item{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		border: 0.5px solid grey;
+		/*border: 0.5px solid grey;*/
 	}
 	
 	
@@ -159,6 +160,7 @@ z-index: 5;
     overflow: hidden;
     opacity: 0.7;
     color: white;
+    font-weight: bold;
 }
 .homepage-hero-module form textarea {
 	    box-sizing: border-box;
@@ -253,6 +255,7 @@ footer {
     width: 100%;
     overflow: hidden;
    /* background: #000;*/
+   opacity: 0.9;
   }
 
   .video-container .poster img {
@@ -282,7 +285,7 @@ footer {
  visibility: hidden;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (max-width:768px) {
  .poster.hidden {
   visibility: visible !important;
  }
