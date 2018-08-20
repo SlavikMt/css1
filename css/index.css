@@ -169,10 +169,14 @@ z-index: 5;
 .homepage-hero-module form textarea {
 	    box-sizing: border-box;
     max-width: 60%;
+    padding-bottom: 5%
 }
 footer {
 	background-color: grey;
 	font-weight: bold;
+	display: flex;
+	flex-direction: row; justify-content: space-between;
+	padding: 0 5% 0 5%;
 	}
 
 #myBtn {
