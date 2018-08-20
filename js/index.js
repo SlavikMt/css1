@@ -21,7 +21,26 @@ $(function() {
             event.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
-            }, 2000);
+            }, 1000);
         }
     });
 });
+//fading out main heading
+$('#logo a').fadeOut(0).fadeIn(2000);
+//more/less text
+
+$(document).ready(function(){
+    $("#btn_start").click(function(){
+        $(".message").fadeIn(1000).show();
+    });
+    $("#btn_reset").click(function(){
+        $(".message").hide();
+    });
+});
+
+
+function show(btn_start,btn_reset){
+  document.getElementById(btn_start).className = "btn_res"; 
+  document.getElementById(btn_reset).className = "";
+}
+

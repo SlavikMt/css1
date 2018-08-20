@@ -15,15 +15,15 @@ h3 {
 	
 }
 header  #logo  img{
-	width:13%;
-	display: flex;
+	width:14%;
+/*	display: flex;*/
 }
 
 header  #logo a{
 	text-decoration: none;
 	color: blue;
 	font-weight: bold;
-	font-size: 4rem;
+	font-size: 3.5rem;
 	font-family: 'Playfair Display', serif; 
 	display: flex;
 	flex-wrap: wrap;
@@ -31,24 +31,16 @@ header  #logo a{
 		}
 header nav {
 	background-color: #F5F5F5;
-		
+		width: 100%;
 }
-header nav ul {
-	margin-left: 0;
-	padding-left: 0;
 
-}
-header nav ul li {
-	list-style-type:  none;
-margin-left: 2%;
-}
  header nav ul li a{
 	text-decoration: none;
 	color: #20B2AA;
 	font-weight: bold;
 	font-size: 2em;
 	border-radius: 10px;
-
+text-align: center;
 }
  nav a:hover {
 	color: white !important;
@@ -82,8 +74,8 @@ align-items: center;
 	background-color: #FFF5EE;
 }
 
-#info div img{
-	width: 100%;
+#info  img{
+	max-width: 100%;
 	
 }
 @media (min-width: 750px){
@@ -94,7 +86,12 @@ align-items: center;
 }
 	
 }
-
+.message{
+	display: none;
+}
+#info .btn_res {
+	display: none;
+}
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -113,15 +110,19 @@ align-items: center;
 	font-size: 1.2em;
 	padding: 2%;
 	/*border: 0.5px solid grey;*/
-column-gap: 5px;
-	grid-row-gap: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	
+	align-items: center;
+  
 }
 #news .news-item div p {
 max-width: 70%;
-display: inline-block;
+
 }
 
 #news .news-item div img {
+
 	width: 60px;
 	height: 60px;
 	
@@ -145,6 +146,10 @@ display: inline-block;
 
 
 }
+
+
+
+
 .homepage-hero-module form {
 display: flex;
 flex-direction: column;
