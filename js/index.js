@@ -21,7 +21,7 @@ $(function() {
             event.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
-            }, 1000);
+            }, );
         }
     });
 });
@@ -44,3 +44,44 @@ function show(btn_start,btn_reset){
   document.getElementById(btn_reset).className = "";
 }
 
+
+// onscroll
+// window.onscroll = function() {myFunction()};
+
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 500) {
+        $('nav').addClass('fixed-header');
+        $('nav div').addClass('visible-title');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+        $('nav div').removeClass('visible-title');
+    }
+});
+
+// btn news onclick displaying
+
+ let articles = document.getElementsByClassName('news-item');
+for (let i = 1; i <= articles.length; i++) {
+    articles[i].addEventListener('click', disp);
+
+    function disp() {
+        let articleBtn = articles[i].querySelector('.btn-news');
+        if (articleBtn.style.display === '') {
+            articleBtn.style.display = 'inline-block';
+        } else {
+            articleBtn.style.display = '';
+        }
+    }
+}

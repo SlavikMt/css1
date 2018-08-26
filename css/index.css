@@ -30,10 +30,19 @@ header  #logo a{
 	justify-content: center ;
 		}
 header nav {
+	position: fixed;
+	overflow: hidden;
 	background-color: #F5F5F5;
 		width: 100%;
 }
 
+/*.sticky {
+  position: fixed;
+  top: 0;
+  min-width: 100vh;
+  background-color: #F5F5F5;
+  z-index: 5;
+}*/
  header nav ul li a{
 	text-decoration: none;
 	color: #20B2AA;
@@ -109,16 +118,27 @@ align-items: center;
 #news .news-item div{
 	font-size: 1.2em;
 	padding: 2%;
-	/*border: 0.5px solid grey;*/
+	
 	display: flex;
 	flex-wrap: wrap;
 	
 	align-items: center;
   
 }
+#news .news-item .btn-news {
+  /*  padding: 10px;*/
+  /*  background: none;
+    border: 1px solid #828282;
+    margin-top: 2%;
+    transition: all;
+    transition-duration: 1s;
+    outline: none!important;*/
+    display: none;
+}
+
 #news .news-item div p {
 max-width: 60%;
-
+padding: 0.5%;
 }
 
 #news .news-item div img {
@@ -126,12 +146,21 @@ max-width: 60%;
 	width:35%;
 	
 }
+#news .news-item div:hover{
+	
+	border: 1px solid black;
+	border-radius: 4px;
+	box-shadow: 3px 3px #eaeaea;
+	padding: 4% 0 4% 0;
+	transition: 0.5s;
+	cursor: pointer;
 
+}
 @media (min-width: 400px) {
 	#news .news-item{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		/*border: 0.5px solid grey;*/
+
 	}
 	
 	
@@ -140,8 +169,8 @@ max-width: 60%;
 @media  (min-width: 750px) {
 	#news .news-item {
 		grid-template-columns: 1fr 1fr 1fr;
-		border: 0.5px solid grey;
-	}
+		
+			}
 
 
 }
