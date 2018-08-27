@@ -45,30 +45,7 @@ function show(btn_start,btn_reset){
 }
 
 
-// onscroll
-// window.onscroll = function() {myFunction()};
 
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
-
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 500) {
-        $('nav').addClass('fixed-header');
-        $('nav div').addClass('visible-title');
-    }
-    else {
-        $('nav').removeClass('fixed-header');
-        $('nav div').removeClass('visible-title');
-    }
-});
 
 // btn news onclick displaying
 
@@ -85,3 +62,7 @@ for (let i = 1; i <= articles.length; i++) {
         }
     }
 }
+
+
+// navbar on scroll sticky
+
